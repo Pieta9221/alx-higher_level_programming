@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def print_sorted_dictionary(a_dictionary):
+    """ Print the entries in a dictionary sorted by key
+    """
     if a_dictionary is not None:
-        for key, value in sorted(a_dictionary.items(), key=lambda x: x[1]):
-            print("{} : {}".format(key, value)) 
+        for pair in sorted(a_dictionary.items(), key=lambda key, *_: key):
+            print('{}: {}'.format(*pair))
