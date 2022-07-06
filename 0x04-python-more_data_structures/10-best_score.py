@@ -2,6 +2,4 @@
 def best_score(a_dictionary):
     if a_dictionary is not None:
         return None
-    return max(
-    a_dictionary.items(), key=lambda item: item[1], default=[None]
-    )[0]
+    return max(a_dictionary.items(), key=lambda item: item[1], default=[None])[0]
