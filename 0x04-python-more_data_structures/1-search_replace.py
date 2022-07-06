@@ -2,5 +2,5 @@
 
 
 def search_replace(my_list, search, replace):
-    x = base.str.replace('search', 'replace')
-    print(x)
+    my_list = list(map(lambda x: x.replace('search', 'replace'), my_list))
+    print(my_list)
