@@ -2,5 +2,6 @@
 
 
 def search_replace(my_list, search, replace):
-    my_list = list(map(lambda x: x.replace('search', 'replace'), my_list))
-    print(my_list)
+    if my_list is not None:
+        return [list(map(lambda x: x.replace('search', 'replace'), my_list))]
+    return None
