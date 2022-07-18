@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-def safe_print_list_integers(my_list=[], x=0):
-    """ Print at most x integers from a list
+def safe_print_integer(value):
+    """ Try to print an integer
     """
-    count = 0
-    for index in range(x):
-        try:
-            print("{:d}".format(my_list[index]), end="")
-        except (TypeError, ValueError):
-            pass
-        else:
-            count += 1
-    print()
-    return count
+    try:
+        print("{:d}".format(value))
+        return True
+    except (TypeError, ValueError):
+        return False
