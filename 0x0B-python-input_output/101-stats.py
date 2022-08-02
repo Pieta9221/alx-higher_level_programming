@@ -20,6 +20,7 @@ def print_stats(size, status_codes):
 
 if __name__ == "__main__":
     import sys
+    
 
     size = 0
     status_codes = {}
