@@ -1,4 +1,4 @@
 #!/usr/bin/node
 // Print a message depending of the number of arguments passed
-const { argv } = require('process');
-if (argv.length === 2) { console.log('No argument'); } else if (argv.length === 3) { console.log('Argument found'); } else { console.log('Arguments found'); }
+const messages = ['No argument', 'Argument found', 'Arguments found'];
+console.log(messages[Math.min(process.argv.length - 2, 2)]);
